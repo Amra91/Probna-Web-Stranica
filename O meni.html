@@ -1,0 +1,285 @@
+
+<html>
+<head>
+<title>Moja stranica</title>
+</head>
+<body>
+<style>
+		.screen {
+		position:absolute;
+		
+		background-image: url(image1.jpg);
+		background-size: cover;
+		width:1380px;
+		height:700px;
+	
+		
+		}
+		
+	#container{
+		position:relative;
+		background-position:absolute;
+		background-color: white;
+		background-color:rgba(0,0,0,0.5);
+		border-radius:10px;
+		
+		margin-left:auto;
+		margin-right:auto;
+		height:110px;
+		width:1024px;
+		
+		
+		}
+		@font-face{
+			font-family:"amra";
+			src: url("Stylish Calligraphy Demo.ttf");
+			}
+		#header{
+			
+			
+			border-radius: 10px;
+			position: relative;
+			
+			width: 100%;
+			height: 110px;
+			border-bottom: 1px solid gray;
+			border-top: 1px solid gray;
+			}
+			
+			#h_one{
+				
+				
+				margin-top:0px;
+				font: 60px "amra";
+				font-weight: bold;
+				
+				padding-top:0px;
+				padding-left:5px;
+				color: white;
+				float:left;
+				}
+				#titula{
+					position: absolute;
+					margin-right:auto;
+					margin-left:auto;
+				
+					font: 30px "amra";
+					font-weight: bold;
+					color: white;
+					left:80px;
+					margin:0px;
+					padding-top:70px;
+					
+					}
+					#navigacija{
+						margin-left:30px;
+						margin-top: 15px;
+						text-align: center;
+						float:left;
+					}
+	ul {
+	position:absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 22px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+	
+    padding: 16px;
+    text-decoration: none;
+	border-radius: 17px;
+}
+
+li a:hover {
+    
+	transform: scale(1.1);
+	color: green;
+}
+				#main_container{
+						margin-top: 15px;
+						margin-left:auto;
+						margin-right:auto;
+						width: 1024px;
+						height: 560px;
+						
+						border-radius:10px;
+					
+					}
+				#left_side{
+					position: relative;
+						width: 380px;
+						height: 550px;
+						margin-top: 5px;
+						background-color:rgba(0,0,0,0.5);
+						border-radius: 20px;
+						border-bottom: 1px solid gray;
+					}
+					#main{
+						position: absolute;
+						width: 610px;
+						height: 550px;
+						margin-left: 400px;
+						margin-top: -550px;
+						background-color:rgba(0,0,0,0.5);
+						border-radius: 20px;
+						float: right;
+						border-bottom: 1px solid gray;
+						text-color:white;
+						}
+	.circle {
+	background: rgb(255,255,255);
+	border-radius: 100%;
+	cursor: pointer;
+	position: fixed;
+	bottom: 15px;
+	right:80px;
+	margin: 0 auto;
+	width: 80px; 
+	height: 80px;
+	overflow: hidden;
+	transform: translateZ(0);
+}
+.circle h1 {
+	color: rgba(189, 185, 199,0);
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 10px;
+	line-height: 6em;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	user-select: none;
+	transition: color 0.8s ease-in-out;
+}
+
+.circle:before,
+.circle:after {
+	border-radius: 100%;
+	content:"";
+	position: absolute;
+	top: 0; 
+	left: 0;
+	width: inherit; 
+	height: inherit;			
+	box-shadow: inset 10.6em 0 0 rgba(30, 140, 209, 0.2), 
+	            inset 0 10.6em 0 rgba(30, 140, 209, 0.2), 
+	            inset -10.6em 0 0 rgba(30, 140, 209, 0.2), 
+	            inset 0 -10.6em 0 rgba(30, 140, 209, 0.2);
+	transition: box-shadow 0.75s;
+}
+
+
+
+.circle:after  {
+	transform: rotate(45deg);
+	
+}
+
+
+
+.circle:hover:before,
+.circle:hover:after  {
+	box-shadow: inset 0.86em 0 0 rgba(255, 0, 0, 0.5), 
+	            inset 0 0.86em 0 rgba(252, 150, 0, 0.5), 
+	            inset -0.86em 0 0 rgba(0, 255, 0, 0.5),	
+	            inset 0 -0.86em 0 rgba(0, 150, 255, 0.5);
+}
+
+.circle:hover h1  {
+	color: rgba(185, 185, 185,1);
+	transform: scale(1.2);
+	text-color: black;
+}
+	#O_meni{
+			margin: 0px;
+			padding: 2px;
+			
+		}
+		#O_meni h1{color: white; font-family: amra, "Courier New", monospace; font-size: auto; margin:0px; padding:0px;}
+		#O_meni h2{color: white; font-family: "Courier New", monospace; font-size: auto; margin:0px; padding-bottom:3px;}
+		#O_meni h3{color: #ffa31a; font-family: "Courier New", monospace; font-size: 16px; margin:0px; padding-bottom:6px; padding-top: 10px;}
+		#O_meni h4{color: #ff9966;font-family: "Courier New", monospace; font-size: 18px; margin:0px; padding-bottom:10x; padding-top: 15px;}
+		#O_meni h5{color: white;font-family: "Courier New", monospace; font-size: 15px; margin:0px; padding-bottom:15x; padding-top: 15px;}
+		#O_meni h6{color: #ff8080;font-family: "Courier New", monospace; font-size: 25px; margin-bottom:25px; padding-bottom:25px;}
+			
+	#slika{
+		position:relative;
+		top: 10%;
+		border:1px solid grey;
+		left:10%;
+		border-radius: 17px;
+		
+	}	
+	
+</style>
+
+
+<div class="screen">
+
+</div>
+<div id = "sve">
+<div id="container">
+<div id="header">
+<div id= "logo">
+		<text id="neki_tekst">
+			<h1 id="h_one">Amra Mahmutovic</h1>
+			<h5 id="titula">Bachelor of Economic's</h5>
+		</text>
+		</div>
+	<div id="navigacija">
+	<ul>
+		<li><a href = "O meni.html" >O meni</a></li>
+		<li><a href = "Interier.html" >Interier</a></li>
+		<li><a href = "Creative.html" >Uradi Sam</a></li>
+		<li><a href = "Contact.html" >Kontakt</a></li>
+		</ul>
+		</div>
+	
+	</div>
+</div>
+<div id = "main_container">
+<div id="left_side">
+	 <img  id= "slika" src= "profil.jpg" width = "300" height= "420"  alt="" /> 
+</div>
+<div id="main">
+<div id="O_meni" >
+<p> <h1>Zdravo,</h1> </p>
+<center>
+<p> <h2> Zovem se Amra i zivim u Gracanici...</h3>
+	<h3> Zavrsila sam srednju Ekonomsku skolu u MSS Gracanica u Gracanici, a zatim i Ekonomski fakultet Univerziteta u Tuzli</h4>
+	<h4> Za sebe mogu reci da sam izuzetno motivirana osoba, zeljna rada i ucenja<span style="color: white; font-size: 15px;" >.</span></br><span style="color: white">Veliki sam ljubitelj dizajna interijera..</span><br>
+		pa s toga ova stranica i predstavlja jedan dio interijerskog dizajna, njegove ljepote, i mogucnosti kako mozemo sami nesto
+		da uradimo<span style="color: white; font-size: 15px;" >....</span><br> Iza sebe imam par lokalnih dizajnerskih projekata koji su uspjesno sprovedeni<span style="color: white; font-size: 15px;" >....</span>
+	<h5>Takodjer u slobodno vrijeme ucim "nove tehnologije", mogu reci da slijedim svoj san, vrijedno radim, da jednoga dana osnujem 
+		svoju IT kompaniju al' o tome nesto kasnije ;)</h5>
+		
+		<h6>Stranica je samo edukativnog karaktera i ne sluzi u komercijalne svrhe</h6>
+</p>
+</center>
+</div>
+ </div
+</div>
+<div onclick="location.href='index.html';" id="smallbox"><div class="circle">
+	<h1>Home</h1>
+</div></div>
+ </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

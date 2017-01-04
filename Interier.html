@@ -1,0 +1,333 @@
+
+<html>
+
+	<head>
+		<title>
+			Interier
+			
+		</title>
+		
+	
+	</head>
+	<body>
+		
+	<style> 
+		
+			
+			article, aside, figure, footer, header, hgroup,
+						menu, nav, section { display: block; }
+			
+				
+			body{
+				background-image: url(pozadina.jpg); 
+				
+			}
+				
+				
+				#main{
+			
+					width: 1000px;
+					margin-left: auto;
+					margin-right: auto;
+					background-color: #F2F2F2;
+					border-radius:16px;
+					
+				
+					}
+				
+					#glavni{
+				
+						width: 1000px;
+						margin-left: auto;
+						margin-right: auto;
+				
+					}
+					#glavni ul{
+			
+						list-style-type: none;
+					}
+			
+					#glavni li {
+			
+						float: center;
+						width: 200px;
+						display: block;
+						margin-right: 40px;
+						margin-bottom: 10px;
+				
+					}
+				
+					#glavni img{
+						-webkit-webkit-transition: all is ease;
+						-moz-webkit-transition: all is ease;
+						-ms-webkit-transition: all is ease;
+						-o-webkit-transition: all is ease;
+						transition: all is ease;
+						filter: blur(3px);
+						-webkit-filter: blur(1px);
+						-moz-filter: blur(1px);
+						-ms-filter: blur(1px);
+						-o-filter: blur(1px) ;
+						border: 1px solid #000000;
+				 
+					}
+				
+					#glavni img:hover{
+						-webkit-webkit-transition: all is ease;
+						-moz-webkit-transition: all is ease;
+						-ms-webkit-transition: all is ease;
+						-o-webkit-transition: all is ease;
+						transition: all is ease;
+						filter: blur(0px);
+						-webkit-filter: blur(0px);
+						-moz-filter: blur(0px);
+						-ms-filter: blur(0px);
+						-o-filter: blur(0px) ;
+						transform: translateZ(25px) rotate(3deg);
+						border: 1px solid #000000;
+						box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+					
+				 
+					}
+				
+			
+				
+			#header{
+				width:1000px;
+				height: 80px;
+				text-align:center;
+			}
+			
+				#logo{
+					position:fixed;
+					width: 40%;
+					height: 80px;
+					float: left;
+					}
+				#lista{
+					position:relative;
+					width: 50%;
+					height: 80px;
+					float:right;
+				}
+				
+				@font-face{
+					font-family:"amra";
+					src: url("Stylish Calligraphy Demo.ttf");
+				}
+				
+				#h_one{
+					position:relative;
+					margin-top:0px;
+					font: 35px "amra";
+					font-weight: bold;
+					padding-top:0px;
+					padding-left:5px;
+					color: red;
+					float:left;
+				}
+				
+				#titula{
+					position: absolute;
+					margin-right:auto;
+					margin-left:auto;
+				
+					font: 20px "amra";
+					font-weight: bold;
+					color: red;
+					left:80px;
+					margin:0px;
+					padding-top:50px;
+					
+					}
+					
+				ul {
+					position:fixed;
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+    
+				}
+
+					li {
+						float: left;
+					}
+
+						li a {
+							display: block;
+							color: red;
+							text-align: center;
+							padding: 16px;
+							text-decoration: none;
+							border-radius: 17px;
+							font-size:20px;
+						}
+
+						li a:hover {
+   
+						transform: scale(1.3);
+						color: green;	
+						}
+			
+			#footer{
+			
+				width: 1000px;
+				text-align: center;
+				background-color: #21C6F8;
+				border-bottom-left-radius: 10px;
+				clear: both;
+				font-size:20px;
+				
+			}
+			.circle {
+					background: rgb(255,255,255);
+					border-radius: 100%;
+					cursor: pointer;
+					position: fixed;
+					bottom: 10px;
+					right:50px;
+					margin: 0 auto;
+					width: 80px; 
+					height: 80px;
+					overflow: hidden;
+					transform: translateZ(0);
+			}
+				.circle h1 {
+					color: rgba(189, 185, 199,0);
+					font-family: 'Lato', sans-serif;
+					font-weight: 900;
+					font-size: 10px;
+					line-height: 6em;
+					text-align: center;
+					text-transform: uppercase;
+					-webkit-font-smoothing: antialiased;
+					user-select: none;
+					transition: color 0.8s ease-in-out;
+				}
+
+			.circle:before,
+			.circle:after {
+				border-radius: 100%;
+				content:"";
+				position: absolute;
+				top: 0; 
+				left: 0;
+				width: inherit; 
+				height: inherit;			
+				box-shadow: inset 10.6em 0 0 rgba(30, 140, 209, 0.2), 
+	            inset 0 10.6em 0 rgba(30, 140, 209, 0.2), 
+	            inset -10.6em 0 0 rgba(30, 140, 209, 0.2), 
+	            inset 0 -10.6em 0 rgba(30, 140, 209, 0.2);
+				transition: box-shadow 0.75s;
+				}
+
+
+
+			.circle:after  {
+				transform: rotate(45deg);
+	
+				}
+
+
+
+			.circle:hover:before,
+			.circle:hover:after  {
+				box-shadow: inset 0.86em 0 0 rgba(255, 0, 0, 0.5), 
+	            inset 0 0.86em 0 rgba(252, 150, 0, 0.5), 
+	            inset -0.86em 0 0 rgba(0, 255, 0, 0.5),	
+	            inset 0 -0.86em 0 rgba(0, 150, 255, 0.5);
+			}
+
+			.circle:hover h1  {
+				color: rgba(185, 185, 185,1);
+				transform: scale(1.2);
+				text-color: black;
+			}
+			
+			
+		</style>
+	
+		<div id= "main">
+	
+			<div id="header">
+			
+				<div id= "logo">
+					<text id="neki_tekst">
+						<h1 id="h_one">Amra Mahmutovic</h1>
+						<h5 id="titula">Bachelor of Economic's</h5>
+					</text>
+				</div>
+				
+				<div id="lista">
+					<ul id ="listaa">
+						<li><a href = "O meni.html" >O meni</a></li>
+						<li><a href = "Interier.html" >Interier</a></li>
+						<li><a href = "Creative.html" >Uradi Sam</a></li>
+						<li><a href = "Contact.html" >Kontakt</a></li>
+				</div>
+				 
+			</div>
+			
+			<div id ="glavni">
+				
+				
+				
+				<ul>
+					
+					
+					<li> <a class="fancybox" rel="group" href="Interier/01.jpg" title="Photo"><img src= "Interier/01.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/02.jpg" title="Photo"><img src= "Interier/02.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/03.jpg" title="Photo"><img src= "Interier/03.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/04.jpg" title="Photo"><img src= "Interier/04.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/05.jpg" title="Photo"><img src= "Interier/05.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/06.png" title="Photo"><img src= "Interier/06.png" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/07.jpg" title="Photo"><img src= "Interier/07.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/08.png" title="Photo"><img src= "Interier/08.png" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/09.jpg" title="Photo"><img src= "Interier/09.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/10.png" title="Photo"><img src= "Interier/10.png" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/11.jpg" title="Photo"><img src= "Interier/11.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/12.jpg" title="Photo"><img src= "Interier/12.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/13.jpg" title="Photo"><img src= "Interier/13.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/14.png" title="Photo"><img src= "Interier/14.png" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/15.jpg" title="Photo"><img src= "Interier/15.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/16.jpg" title="Photo"> <img src= "Interier/16.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/17.jpg" title="Photo"><img src= "Interier/17.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/18.jpg" title="Photo"><img src= "Interier/18.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/19.jpg" title="Photo"> <img src= "Interier/19.jpg" width = "200" height= "120"  alt="" /></a></li>
+					<li> <a class="fancybox" rel="group" href="Interier/20.jpg" title="Photo"><img src= "Interier/20.jpg" width = "200" height= "120"  alt="" /></a></li>
+					
+				</ul>
+			
+			
+			</div>
+			
+			<div id = "footer">
+			</div>
+			
+		</div>
+		
+		<div onclick="location.href='index.html';" id="smallbox"><div class="circle">
+		<h1>Home</h1>
+		</div></div>
+		<!--[if IE]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+	
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
+
+	</body>
+</html>

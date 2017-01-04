@@ -1,0 +1,177 @@
+<html>
+<head>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+<style>
+
+#background_cycler{padding:0;margin:0;width:100%;position:absolute;top:0;left:0;z-index:-1}
+
+#background_cycler img{position:absolute;left:0;top:0;width:100%;z-index:1}
+#background_cycler img.active{z-index:3}
+
+
+#outer_wrap{
+	width:80%; 
+	margin-left:auto;
+	margin-right:auto; 
+	
+	}
+#wrap{ 
+	position:relative;
+	margin-left:auto;
+	margin-right:auto; 
+	width: 60%;
+	height:90%;
+	
+	
+	}
+
+	#logo{
+			position:fixed;
+			
+			width: 40%;
+			height: 80px;
+			float: left;
+		}
+		#lista{
+			position:relative;
+			padding:5px;
+			margin-right: -100px;
+			width: 60%;
+			height: 80px;
+			float:right;
+			
+		}
+			@font-face{
+			font-family:"amra";
+			src: url("Stylish Calligraphy Demo.ttf");
+			}
+		#h_one{
+				position:relative;
+				margin-top:0px;
+				font-family:"amra", "Courier New", monospace;
+				font-size: 35px;
+				font-weight: bold;
+				
+				padding-top:0px;
+				padding-left:5px;
+				color: red;
+				float:left;
+				}
+		#titula{
+					
+					position: absolute;
+					margin-right:auto;
+					margin-left:auto;
+					font-family:"amra", "Courier New", monospace;
+					font-size: 20px;
+					font-weight: bold;
+					color: red;
+					left:70px;
+					margin:0px;
+					padding-top:50px;
+					
+					}
+		#footer{
+			position:fixed;
+			font-family: "amra", "Courier New", monospace;
+			font-size: 20px;
+			width: 80%;
+			height:40px;
+			clear: both;
+			padding-left: 80px;
+			z-index: 10;
+			height: 3em;
+			bottom:0;
+			}
+			#footer:hover{
+				transform: scale(1.1);
+				color: green;
+				font-family:"amra", "Courier New", monospace;
+				font-size: 21px;
+				}		
+ul {
+	position:fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+	border-radius: 17px;
+	font-size:20px;
+}
+
+li a:hover {
+    
+	transform: scale(1.3);
+	color: green;
+}
+</style>
+
+</head>
+<body>
+<div id="background_cycler" >
+
+<script type="text/javascript">
+$('#background_cycler').hide();//hide the background while the images load, ready to fade in later
+</script>
+
+<img class="active" src="pic5.png" alt=""/>
+<img src="pic1.jpg" alt="" />
+<img src="pic2.jpg" alt=""  />
+<img src="pic3.jpg" alt=""/>	
+<img src="pic4.jpg" alt=""/>
+<img src="pic6.jpg" alt=""/>	
+
+</div>
+<script>
+function cycleImages(){
+      var $active = $('#background_cycler .active');
+      var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler img:first');
+      $next.css('z-index',2);//move the next image up the pile
+	  $active.fadeOut(1500,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+      $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+
+    $(window).load(function(){
+		$('#background_cycler').fadeIn(1500);//fade the background back in once all the images are loaded
+		  // run every 7s
+		  setInterval('cycleImages()', 7000);
+    })
+
+</script>
+<div id="outer_wrap">
+	<div id="wrap">
+	<div id="wrap_background"></div>
+		<div id= "logo">
+		<text id="neki_tekst">
+			<h1 id="h_one">Amra Mahmutovic</h1>
+			<h5 id="titula">Bachelor of Economic's</h5>
+		</text>
+		</div>
+		<div id="lista">
+		<ul id ="listaa">
+			<li><a href = "O meni.html" >O meni</a></li>
+			<li><a href = "Interier.html" >Interier</a></li>
+			<li><a href = "Creative.html" >Uradi Sam</a></li>
+			<li><a href = "Contact.html" >Kontakt</a></li>
+		</div>
+		<div id = "footer"><p>Stranica je edukativnog karaktera i ne sluzi u komercijalne svrhe.<p></div>
+	</div>
+	
+</div>
+</body>
+</html>
